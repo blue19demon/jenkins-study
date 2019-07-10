@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: zmph-config-client
+ 
+ # 描述信息
+info:
+  blog-url: http://blog.battcn.com
+  author: Levin
+  version: '@project.version@'
+  env: '@spring.profiles.active@'
+  app:
+    name: ${spring.application.name}-${server.port}
+  company:
+    name: www.cloud.com
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

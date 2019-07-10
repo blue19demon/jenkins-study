@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: zmph-config-client
+#jackson相关配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    #时区必须要设置
+    time-zone: GMT+8
+    #ALWAYS的意思是即时属性为null，仍然也会输出这个key
+    default-property-inclusion: ALWAYS
+    serialization:
+      indent-output: true
+ 
+ # 描述信息
+info:
+  blog-url: http://blog.battcn.com
+  author: Levin
+  version: '0.0.1-SNAPSHOT'
+  env: '@spring.profiles.active@'
+  app:
+    name: ${spring.application.name}-${server.port}
+  company:
+    name: www.cloud.com
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

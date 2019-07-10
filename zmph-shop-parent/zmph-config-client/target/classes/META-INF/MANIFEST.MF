@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: zmph-config-client
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: com.shop
+Build-Jdk: 1.8.0_77
+Implementation-URL: http://maven.apache.org/zmph-config-client
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,24 @@
+server:
+  port: 7400
+
+spring: 
+  datasource:
+     name: test
+     url: jdbc:mysql://127.0.0.1:3306/zmph?useUnicode=true&characterEncoding=utf8
+     username: root
+     password: root
+     driver-class-name: com.mysql.jdbc.Driver
+eureka: 
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:7000/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddr}:${server.port}   
+
+#消息队列
+rabbitmq: 
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest

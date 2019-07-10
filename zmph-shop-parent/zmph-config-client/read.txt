@@ -1,0 +1,15 @@
+https://blog.csdn.net/m0_38105115/article/details/89457415
+分布式配置中心
+1.启动注册中心
+java -jar zmph-shop-eurake-0.0.1-SNAPSHOT.jar
+1.启动server
+java -jar zmph-config-server-0.0.1-SNAPSHOT.jar
+1.启动client
+java -jar zmph-config-client-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
+java -jar zmph-config-client-0.0.1-SNAPSHOT.jar --spring.profiles.active=uat
+java -jar zmph-config-client-0.0.1-SNAPSHOT.jar --spring.profiles.active=sit
+java -jar zmph-config-client-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
+在进行配置改变刷新之前要进行一步post提交操作。我们可以在码云上进行配置一下，或者每次都进行手动提交。
+【手动提交】
+curl -v -X POST “http://localhost:7001/actuator/bus-refresh”。

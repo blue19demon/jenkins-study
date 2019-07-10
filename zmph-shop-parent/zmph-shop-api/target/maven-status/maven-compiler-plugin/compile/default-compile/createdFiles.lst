@@ -1,0 +1,6 @@
+org\zmph\shop\api\common\PageResult$Builder.class
+org\zmph\shop\api\ws\ProductWSFeign.class
+org\zmph\shop\api\ws\UserWSFeign.class
+org\zmph\shop\api\response\ProductResponse.class
+org\zmph\shop\api\response\UserResponse.class
+org\zmph\shop\api\common\PageResult.class

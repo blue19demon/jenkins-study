@@ -1,0 +1,32 @@
+server:
+  port: 7101
+spring:
+  cloud:
+    config:
+      uri: http://localhost:7200/
+      label: config-repo
+      name: ${spring.application.name},database,mq,zookeeper
+      profile: sit
+    #自动刷新
+    bus:
+      refresh:
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/ 
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
+
+#本地环境无需配置，只需启动mq
+rabbitmq: 
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  
+security: 
+  basic:
+    enabled: false

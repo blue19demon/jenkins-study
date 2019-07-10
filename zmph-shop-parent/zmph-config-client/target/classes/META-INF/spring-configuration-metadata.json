@@ -1,0 +1,67 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.JdbcFile",
+      "name": "jdbc",
+      "type": "org.zmph.shop.config.client.platform.JdbcFile"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.MQConfig",
+      "name": "mq",
+      "type": "org.zmph.shop.config.client.platform.MQConfig"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.ZKConfig",
+      "name": "zookeeper",
+      "type": "org.zmph.shop.config.client.platform.ZKConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.JdbcFile",
+      "name": "jdbc.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.JdbcFile",
+      "name": "jdbc.port",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.JdbcFile",
+      "name": "jdbc.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.JdbcFile",
+      "name": "jdbc.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.MQConfig",
+      "name": "mq.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.MQConfig",
+      "name": "mq.server-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.MQConfig",
+      "name": "mq.user-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.ZKConfig",
+      "name": "zookeeper.root",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.zmph.shop.config.client.platform.ZKConfig",
+      "name": "zookeeper.server",
+      "type": "java.lang.String"
+    }
+  ]
+}

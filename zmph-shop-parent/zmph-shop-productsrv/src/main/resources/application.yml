@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  application: 
+    name: zmph-shop-productsrv
+#jackson相关配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    #时区必须要设置
+    time-zone: GMT+8
+    #ALWAYS的意思是即时属性为null，仍然也会输出这个key
+    default-property-inclusion: ALWAYS
+    serialization:
+      indent-output: true
+
+#mybatis config
+mybatis:
+  typeAliasesPackage: org.zmph.shop.productsrv.bean
+  mapperLocations: classpath:mappers/*.xml
+
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+# 描述信息
+info:
+  blog-url: http://blog.battcn.com
+  author: Levin
+  version: '@project.version@'
+  env: '@spring.profiles.active@'
+  app:
+    name: ${spring.application.name}-${server.port}
+  company:
+    name: www.cloud.com
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$
+# 加载所有的端点/默认只加载了 info / health
+management:
+  endpoints:
+    web: 
+      exposure: 
+        include: "*"
+    health:
+      show-details: always
+# 可以关闭制定的端点
+    shutdown:
+      enabled: false

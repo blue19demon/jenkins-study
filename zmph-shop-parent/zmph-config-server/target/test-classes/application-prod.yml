@@ -1,0 +1,39 @@
+server:
+  port: 7203
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7003/eureka/ 
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    
+spring:
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      server: 
+        svn:
+          uri: https://user-20161118uc/svn/jenkinsRepositories/springcCoud/zmph-shop-parent/app-global-config-svn
+          username: huangjian
+          password: 123456
+          default-label: config-repo
+    #自动刷新
+    bus:
+      refresh:
+        enabled: true
+    
+#本地环境无需配置，只需启动mq
+rabbitmq: 
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+ 
+#进行暴露服务
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

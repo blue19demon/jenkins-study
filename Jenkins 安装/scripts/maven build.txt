@@ -1,0 +1,1 @@
+clean install -P${env} -pl ${project_name} -am -Dmaven.test.skip=true findbugs:findbugs
