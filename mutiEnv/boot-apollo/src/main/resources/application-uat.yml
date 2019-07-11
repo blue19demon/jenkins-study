@@ -1,0 +1,6 @@
+apollo:
+  meta: http://127.0.0.1:18082
+app:
+  id: SampleApp
+server:
+  port: 9993

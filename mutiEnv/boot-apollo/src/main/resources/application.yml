@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: ALWAYS
+    serialization:
+      indent-output: true
+    time-zone: GMT+8
+
