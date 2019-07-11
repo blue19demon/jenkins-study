@@ -1,0 +1,8 @@
+kafaka 启动，创建Topic
+
+#elasticsearch
+http://127.0.0.1:9200
+#logstash
+http://127.0.0.1:9600
+#kibana
+http://127.0.0.1:5601

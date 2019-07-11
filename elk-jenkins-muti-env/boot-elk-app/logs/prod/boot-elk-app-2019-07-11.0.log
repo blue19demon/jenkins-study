@@ -1,0 +1,312 @@
+14:51:32.559 default [main] INFO 
+					com.elk.BootELKApplication - Starting BootELKApplication on USER-20161118UC with PID 9184 (F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app\target\classes started by Administrator in F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app)
+14:51:32.589 default [main] INFO 
+					o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+14:51:32.730 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka version : 0.9.0.0
+14:51:32.730 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka commitId : fc7243c2af4b2b4a
+14:51:32.780 default [main] INFO 
+					com.elk.BootELKApplication - The following profiles are active: prod
+14:51:32.810 default [main] INFO 
+					o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:51:32 CST 2019]; root of context hierarchy
+14:51:33.650 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7004 (http)
+14:51:33.670 default [main] INFO 
+					o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:51:33.670 default [main] INFO 
+					o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.40
+14:51:33.761 default [localhost-startStop-1] INFO 
+					o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:51:33.761 default [localhost-startStop-1] INFO 
+					o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 951 ms
+14:51:33.871 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:51:33.871 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:51:33.881 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:51:33.881 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:51:33.881 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:51:34.111 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:51:32 CST 2019]; root of context hierarchy
+14:51:34.171 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.index()
+14:51:34.171 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.regist(com.elk.RequestData)
+14:51:34.181 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/elk],methods=[GET]}" onto public java.lang.String com.elk.IndexController.elk()
+14:51:34.181 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:51:34.181 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:51:34.211 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:51:34.211 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:51:34.231 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:51:34.331 default [main] INFO 
+					o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:51:34.351 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7004 (http)
+14:51:34.361 default [main] INFO 
+					com.elk.BootELKApplication - Started BootELKApplication in 2.273 seconds (JVM running for 2.578)
+14:54:11.336 default [main] INFO 
+					com.elk.BootELKApplication - Starting BootELKApplication on USER-20161118UC with PID 11752 (F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app\target\classes started by Administrator in F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app)
+14:54:11.366 default [main] INFO 
+					o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+14:54:11.506 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka version : 0.9.0.0
+14:54:11.506 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka commitId : fc7243c2af4b2b4a
+14:54:11.547 default [main] INFO 
+					com.elk.BootELKApplication - The following profiles are active: prod
+14:54:11.578 default [main] INFO 
+					o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:54:11 CST 2019]; root of context hierarchy
+14:54:12.343 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7004 (http)
+14:54:12.373 default [main] INFO 
+					o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:54:12.373 default [main] INFO 
+					o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.40
+14:54:12.458 default [localhost-startStop-1] INFO 
+					o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:54:12.458 default [localhost-startStop-1] INFO 
+					o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 880 ms
+14:54:12.551 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:54:12.551 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:54:12.561 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:54:12.561 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:54:12.561 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:54:12.810 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:54:11 CST 2019]; root of context hierarchy
+14:54:12.862 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.index()
+14:54:12.862 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/elk],methods=[GET]}" onto public java.lang.String com.elk.IndexController.elk()
+14:54:12.862 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.regist(com.elk.RequestData)
+14:54:12.872 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:54:12.872 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:54:12.892 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:12.892 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:12.922 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:13.005 default [main] INFO 
+					o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:54:13.027 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7004 (http)
+14:54:13.034 default [main] INFO 
+					com.elk.BootELKApplication - Started BootELKApplication in 2.162 seconds (JVM running for 2.469)
+14:54:28.511 default [main] INFO 
+					com.elk.BootELKApplication - Starting BootELKApplication on USER-20161118UC with PID 7524 (F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app\target\classes started by Administrator in F:\softs\codes\jenkinsTest\elk-jenkins-muti-env\boot-elk-app)
+14:54:28.541 default [main] INFO 
+					o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+14:54:28.725 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka version : 0.9.0.0
+14:54:28.725 default [main] INFO 
+					o.a.kafka.common.utils.AppInfoParser - Kafka commitId : fc7243c2af4b2b4a
+14:54:28.870 default [main] INFO 
+					com.elk.BootELKApplication - The following profiles are active: prod
+14:54:28.901 default [main] INFO 
+					o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:54:28 CST 2019]; root of context hierarchy
+14:54:29.762 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7004 (http)
+14:54:29.788 default [main] INFO 
+					o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:54:29.790 default [main] INFO 
+					o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.40
+14:54:29.862 default [localhost-startStop-1] INFO 
+					o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:54:29.862 default [localhost-startStop-1] INFO 
+					o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 961 ms
+14:54:29.967 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:54:29.977 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:54:29.977 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:54:29.977 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:54:29.977 default [localhost-startStop-1] INFO 
+					o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:54:30.213 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36916eb0: startup date [Thu Jul 11 14:54:28 CST 2019]; root of context hierarchy
+14:54:30.273 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.index()
+14:54:30.273 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/elk],methods=[GET]}" onto public java.lang.String com.elk.IndexController.elk()
+14:54:30.284 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.Object com.elk.IndexController.regist(com.elk.RequestData)
+14:54:30.290 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:54:30.294 default [main] INFO 
+					o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:54:30.319 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:30.320 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:30.367 default [main] INFO 
+					o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:54:30.467 default [main] INFO 
+					o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:54:30.487 default [main] INFO 
+					o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7004 (http)
+14:54:30.497 default [main] INFO 
+					com.elk.BootELKApplication - Started BootELKApplication in 2.448 seconds (JVM running for 2.714)

@@ -1,0 +1,5 @@
+server:
+  port: 7004
+  
+foo: 
+  name: this is ${spring.profiles.active} ${spring.application.name}
